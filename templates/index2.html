@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>City</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <img src="https://www.myrecordjournal.com/getattachment/cc0f4042-c551-4c28-8085-813eb1fe49b5/Sut-WallofHonor2023-rj-042223-ph1">
+    <br>
+    <form action="gret" method="post">
+        {% for message in get_flashed_messages() %}
+             <p>{{ message }}</p>
+         {% endfor %}
+    </form>
+</body>
+</html>
